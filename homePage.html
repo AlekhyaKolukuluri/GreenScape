@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <link rel="stylesheet" href="homePage.css"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <script>
+
+      function myFunction(){
+
+          // Retrieve username from URL parameter
+          var urlParams = new URLSearchParams(window.location.search);
+          var username = urlParams.get('username');
+
+          document.getElementById("user-name").innerText = username ;
+          
+      }
+
+      function LilyPage(){
+        window.location.href = "peaceLilyPage.html";
+      }
+
+      function Peperomia(){
+        window.location.href = "peperomiaPage.html";
+      }
+  </script>
+
+  </head>
+
+<body onload="myFunction()">
+
+
+    <div id="sectionHomePage">
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #D4E7C5; border: solid; border-color: #004643; border-width: 8px;">
+            <a class="navbar-brand" href="#">
+                <img src="/Users/alekhyakolukuluri/Desktop/greenscape.png" class="nav-image"/>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup" style="background-color: #D4E7C5;">
+              <div class="navbar-nav ml-auto" style="background-color: #D4E7C5;">
+                <a class="nav-link active" href="#">
+                  Home
+                  <span class="sr-only">(current)</span>
+                </a>
+                <a class="nav-link" href="#">Fertilizers</a>
+                <a class="nav-link" href="#">DIY</a>
+                <a class="nav-link" href="forumPage.html">Forum</a>
+                <a class="nav-link" href="#"><i class="fa badge fa-lg" value=8>&#xf07a;</i></a>
+                <a class="nav-link" href="#"><i class="fa fa-solid fa-user fa-sm"></i></a>
+              </div>
+            </div>
+          </nav>
+             
+<!-- welcome card -->
+<div class="welcome-card">
+  <div class="sub-card" style="margin-left: 10%;">
+    <h1 class="sub-card-heading">Welcome to <scan class="sub-card-title-">GreenScape,</scan> </h1>
+    <p class="sub-card-name" id="user-name"></p>
+  </div>
+  <div class="sub-card">
+    <img src="https://i.guim.co.uk/img/media/e5076d9ac04ba4725f9d27f4ad738a83f76c62d3/0_0_4626_2865/master/4626.jpg?width=465&dpr=1&s=none" class="sub-card-image">
+  </div>
+
+</div>
+
+
+<!-- Plant cards -->  
+<ul class="cards">
+  <li>
+    <a href="" class="card">
+      <img src="peace liliy.jpeg" class="card__image" alt="" />
+      <div class="card__overlay">
+        <div class="card__header">
+          <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>   
+          <div class="card__header-text">
+            <h3 class="card__title">Peace lily</h3> 
+          </div>
+        </div>
+        <p class="card__description">The peace lily is a flowering plant native to tropical regions of the Americas and southeastern Asia. They also tolerate fluorescent lights and have air-purifying abilities...</p>
+        <div class="wrap"> 
+          <button class="login-button" onclick="display('sectionPlantsPage')">
+                Know more 
+            </button>
+        </div> 
+        
+      </div>
+    </a>      
+  </li>
+  <li>
+    <a href="" class="card">
+      <img src="Peperomia-Green-1.jpg" class="card__image" alt="" />
+      <div class="card__overlay">        
+        <div class="card__header">
+          <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg> 
+          <div class="card__header-text">
+            <h3 class="card__title">Perperomia</h3>
+          </div>
+        </div>
+        <p class="card__description">The Peperomia Green plant is perfect for evergreen and colorful beauty on your balcony. It’s a fast-growing plant that is easier to care for and is adaptable and visually appealing...<span class="know-more" href="">Know more</span></p>
+        <div class="wrap"> 
+          <button class="login-button">
+                Know more 
+            </button>
+        </div>
+      </div>
+    </a>
+  </li>  
+</ul>
+
+        <button class="btn btn-primary" onclick="display('sectionPlantsPage')">Show</button>
+    </div>
+
+    <div id="sectionPlantsPage">
+        <p>PlantsPage</p>
+        <button class="btn btn-primary" onclick="display('sectionHomePage')">Back</button>
+    </div>
+
+    
+    
+    
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js">
+    </script>
+</body>
+
+</html>

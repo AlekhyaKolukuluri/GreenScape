@@ -1,0 +1,94 @@
+
+body{
+    margin: 0px;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+  }
+
+#sectionHomePage{
+    background-color: #519872;
+}
+
+.nav-image{
+    width: 10%;
+    height: 10%;
+    margin: 0px;
+}
+
+
+
+.card { 
+    position: fixed;
+	border-radius: 30px;
+	background-color: transparent; 
+    background: rgba(247, 255, 247, 0.582); 
+	padding: 10px 20px; 
+	transition: transform 0.2s; 
+	width: 600px; 
+	text-align: center;
+	border: solid black 6px;
+} 
+
+
+h1 { 
+    font-family: monaco;
+    font-weight: bold;
+	color: #004643; 
+} 
+
+label { 
+	display: block; 
+	width: 100%; 
+	margin-top: 10px; 
+	margin-bottom: 5px; 
+	text-align: left; 
+	color: #294B29; 
+	font-weight: bold; 
+} 
+
+
+input { 
+	display: block; 
+	width: 100%; 
+	margin-bottom: 15px; 
+	padding: 10px; 
+	box-sizing: border-box; 
+	border: 3px solid black; 
+	border-radius: 5px; 
+} 
+
+.login-button {
+    border-radius: 10px;
+    width: 40%; 
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px; 
+    background-color: #99BC85; 
+    text-transform: uppercase;
+    color: #000;
+    cursor: pointer;
+    border: 3px solid;
+    padding: 0.5em 0.4em;
+    box-shadow: 1px 1px , 2px 2px , 3px 3px , 4px 4px , 5px 5px ;
+    touch-action: manipulation;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+
+.login-button:hover{
+    color: #99BC85;
+    background-color: #001e1d;
+}
+
+.wrap { 
+	display: flex; 
+	justify-content: center; 
+	align-items: center; 
+}
